@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+	background-image: url('b&w nature.jpg'); 
+	background-size: cover;
+    background-attachment: fixed;
+}
+
+
+h1
+{ font-family: 'Algerian',fantasy; 
+    text-align: center; 
+    font-size: 50px;
+    color: white;
+    background: black;
+    position: relative;
+    top: 10px;
+}
+.q, span
+{ font-family: monospace; 
+    font-size: 15px; 
+    text-align: center; 
+    color:white;
+    background: black;
+
+}
+.q{     position: relative; top: 10px;}
+#Header
+{  
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 8px rgba( 0, 0, 0, 0.5);
+    z-index: 10;
+    background: black;
+    height: 100px;
+}
+.para 
+{   font-family: serif; 
+    font-size: 20px; 
+    text-align: center;
+    color: black;
+    position: relative;
+    top: 10px;
+    margin: 0% 4%;
+    padding: 0px 10px;
+    padding-top: 5px;
+
+}
+.para span{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    background-color: transparent;
+}
+
+      /* types */
+
+.types{
+    position: relative;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.h2
+{
+    margin-left: 15px;
+    color: whitesmoke;
+}
+#pencil
+{
+    position: absolute;
+    left: 50px;
+    bottom: -200px;
+}
+#color{
+    position: absolute;
+    left: 50px;
+    bottom: -400px;
+
+}
+#negative
+{
+    position: absolute;
+    left: 250px;
+    bottom: -200px;
+}
+#doodle
+{
+    position: absolute;
+    left: 250px;
+    bottom: -400px;
+}
+#pencil img:hover,#doodle img:hover,#color img:hover,#negative img:hover
+{
+    width: 165px;
+    height: 165px;
+    transition: 0.5s;    
+}
+
+@media screen and (max-width:576px) {
+
+    .types{
+    position: absolute;
+    top: 62%;
+    left: 50px;
+
+}
+.h2
+{
+    margin-left: 15px;
+    color: whitesmoke;
+}
+#pencil
+{
+    position: absolute;
+    left: 15px;
+    bottom: -200px;
+}
+#color{
+    position: absolute;
+    left: 15px;
+    bottom: -400px;
+
+}
+#negative
+{
+    position: absolute;
+    left: 210px;
+    bottom: -200px;
+}
+#doodle
+{
+    position: absolute;
+    left: 210px;
+    bottom: -400px;
+}
+#pencil img:hover,#doodle img:hover,#color img:hover,#negative img:hover
+{
+    width: 165px;
+    height: 165px;
+    transition: 0.5s;    
+}
+
+}
+
+/* table */
+
+.table{
+    position: relative;
+    width: 50% !important;
+    margin-left: 600px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.price{
+    position: relative;
+    margin-left: 500px;
+}
+tr,td{
+    padding: 15px !important;
+}
+h3{
+    position: relative;
+    margin-top: -3% !important;
+    text-align: center;
+}
+
+@media screen and (max-width:576px) {
+
+    .table{
+        position: relative;
+        width: 80% !important;
+        margin-left: 55px;
+        text-align: center;
+        margin-top: 30px !important;    
+    }
+    .price{
+        position: relative;
+        margin-left: 50px;
+    }
+    tr,td{
+        padding: 15px !important;
+    }
+    h3{
+        position: relative;
+        margin-top: 580px !important;
+        text-align: center;
+        color: cornsilk;
+    }    
+    
+}
+
+/* footer */
+.content{
+
+    padding-top: 30px;
+    margin-left: 80px;
+    color: whitesmoke;
+}
+.num{
+    margin-left: 80px;
+    color: cornsilk;
+    padding-bottom: 5px;
+}
+.insta{
+
+
+    margin-left: 75px;
+    color: cornsilk;
+    padding: 5px;
+}
+.order{
+
+    margin-top: 30px;
+
+    color: cornsilk;
+}
+.place{
+    font-size: 22px;
+    color:black;
+
+}
+.link{
+    text-decoration: none;
+    color: cyan;
+    background: transparent;
+}
+
+
+@media screen and (max-width:576) {
+
+    .content{
+
+        padding-top: 30px;
+        margin-left: 80px;
+        color: whitesmoke;
+    }
+    .num{
+        margin-left: 80px;
+        color: cornsilk;
+        padding-bottom: 5px;
+    }
+    .insta{
+    
+    
+        margin-left: 75px;
+        color: cornsilk;
+        padding: 5px;
+    }
+    .order{
+    
+        margin-top: 30px;
+        padding-left: 20px !important;
+        color: cornsilk;
+    }
+    .place{
+        font-size: 22px;
+        color:black;
+    
+    }
+    .link{
+        text-decoration: none;
+        color: cyan;
+        background: transparent;
+    }
+    
+}

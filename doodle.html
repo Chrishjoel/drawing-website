@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Doodle Portraits</title>
+	<style>
+		html
+		{
+			background-color: black;
+		}
+
+		#side
+		{
+			width: 28%;
+			position: fixed;
+			height: 100%;
+			background: rgb(255, 201, 14);
+			float: left;
+        }
+        #side h2
+        {
+        	color: black;
+        	margin-top: 300px;
+			font-family: fantasy; 
+			font-display: fallback; 
+			font-size: 40px;  
+			text-align: center;
+        }
+        #photos
+        {
+        	width: 70%;
+        	float: right;
+        }
+		img:hover{
+            width: 320px;
+            height: 320px;
+            border: 2px solid rgb(255, 201, 14);
+        } 
+
+		@media screen and (max-width:576px) {
+			html
+		{
+			background-color: black;
+		}
+		#side
+		{
+			width: 28%;
+			position: fixed;
+			height: 100%;
+			background: rgb(255, 201, 14);
+			float: left;
+        }
+        #side h2
+        {
+        	color: black;
+        	margin-top: 300px;
+			font-family: fantasy; 
+			font-display: fallback; 
+			font-size: 20px;  
+			text-align: center;
+        }
+        #photos
+        {
+        	width: 70%;
+        	float: right;
+        }
+		img:hover{
+            width: 320px;
+            height: 320px;
+            border: 2px solid rgb(255, 201, 14) ;
+        } 
+
+		}
+
+
+
+	</style>
+</head>
+<body>
+<div id="side"><h2>Doodle Drawings</h2></div>
+<div id="photos"><a href="d1.jpg">
+	<img src="d1.jpg" width="300px" height="300px">
+</a>
+
+<a href="d2.jpg">
+	<img src="d2.jpg" width="300px" height="300px">
+</a></div>
+</body>
+</html>

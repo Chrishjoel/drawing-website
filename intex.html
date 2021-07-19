@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device=width, initial_scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Place your order</title>
+    <script src="script.js"></script>
+    <style>
+ 
+   *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+    body
+    {
+       
+        background-image: url('nature.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #container
+    {
+        position: relative;
+        width: 500px;
+        height: 550px;
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow:20px 20px 50px rgba(0,0,0,0.5);
+        border-radius: 15px;
+        background: rgba(255,255,255,0.1);
+        overflow: hidden;
+        border-top: 2px solid rgba(255,255,255,0.5);
+        border-left: 2px solid rgba(255,255,255,0.5);
+        backdrop-filter: blur(4px);
+
+    }
+    #name,#contact
+    {
+      width: 340px;
+      height: 20px;
+    }
+    #address
+    {
+      width: 340px;
+      height: 60px;
+    }
+    #type
+    {
+        width: 338px;
+        height: 30px;
+    }
+    .name,.address,.contact,.type
+    {
+        font-family: sans-serif;
+        font-size: medium;
+        
+        color: black;
+    }
+    h2
+    {
+        font-family: sans-serif;
+        font-size: 35px;
+        color: rgb(121, 144,194);
+        font-weight: bold;
+        margin-left: 50px;
+    }
+    #button
+    {
+        margin-left: 150px;
+    }
+
+
+    </style>
+</head>
+
+<body>
+<div id="container">
+    
+    <form method="POST" action="Submitted.html" onsubmit="return check()" autocomplete="off" id="content">
+<h2>Order Details</h2>
+<p>
+    <label class="name">Name </label><br>  
+    <input type="text" id="name">
+</p>
+<p>
+    <label for="Types"  class="type" >Types </label><br>  
+    <select name="type" id="type">
+        <option value="Pencil" checked="Pencil">Pencil Drawing</option>
+        <option value="Color">Color Drawing</option>
+        <option value="Negative">Negative Drawing</option>
+        <option value="Doodle">Doodle Drawing</option>
+    </select>
+</p>
+<p>
+    <label  class="address">Address </label><br>
+    <textarea cols="22" rows="5" id="address"></textarea>
+</p>
+<p>
+    <label  class="contact">Contact </label><br>
+    <input type="text" id="contact">
+</p>
+<p>
+    <label>Do you like to share your portrait in our instagram page</label><br>
+    <input type="radio" name="insta post" value="yes" checked="yes"><label>Yes </label> 
+    <input type="radio" name="insta post" value="no"><label>No</label> 
+</p>
+<p>
+   <input class="btn btn-primary" type="submit" value="Submit"  id="button">
+</p>
+
+
+</form>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+</body>
+</html>
